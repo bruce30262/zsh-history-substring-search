@@ -1,3 +1,13 @@
+# This is a customized version by bruce30262
+* Won't overwrite config with default values. Taken from [this PR](https://github.com/zsh-users/zsh-history-substring-search/pull/108).  
+* Only do fuzzy search if `HISTORY_SUBSTRING_SEARCH_FUZZY` is set  
+    - Right now in the default behavior, if you type `ab` and press the up key, it will search for `ab*` instead of `*ab*`.  
+    - Took [this PR](https://github.com/zsh-users/zsh-history-substring-search/pull/96) as the reference.
+
+***
+( The following content were derived from the original README.md )
+***
+
 # zsh-history-substring-search
 
 This is a clean-room implementation of the [Fish shell][1]'s history search
